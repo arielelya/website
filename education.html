@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-54246025-1');
+    </script>
+
+    <title>Ariel @ Runi</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/v3/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/v3/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/v3/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/v3/site.webmanifest">
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Second year computer science and entrepreneurship student at Reichman University.">
+    <meta name="keywords" content="ariel,elya,ariel elya,IDC Herzliya,Reichman Universitytive,computer science,entrepreneurship">
+    <meta name="author" content="Ariel Elya">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="all">
+
+    <link rel="stylesheet" type="text/css" href="cv.css">
+    <link rel="stylesheet" type="text/css" href="nav.css">
+
+    <!-- Use FontAwesome for (most) icons -->
+    <script src="https://kit.fontawesome.com/2a7f8c9d6d.js" defer crossorigin="anonymous"></script>
+
+    <!-- Use AcademicIcons for Google Scholar and Semantic Scholar icons -->
+    <!-- The following pattern defers CSS loading, making page load much faster -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"></noscript>
+
+    <script src="logic.js" defer></script>
+    <script src="no-transition-on-resize.js" defer></script>
+
+
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Ariel Elya",
+      "url": "http://www.arielElya.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/ariel-elya-a201051b6",
+        "https://www.facebook.com/ariel.elya.3"
+      ]
+    }
+    </script>
+
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img id="me" loading=lazy alt="A photo of Ariel Elya" src="images/me2.png" srcset="images-responsive/me2-100w.png 100w, images-responsive/me2-200w.png 200w, images-responsive/me2-300w.png 300w, images-responsive/me2-400w.png 400w, images-responsive/me2-500w.png 500w, images-responsive/me2-600w.png 600w, images-responsive/me2-700w.png 700w, images-responsive/me2-800w.png 800w, images-responsive/me2-900w.png 900w, images-responsive/me2-2316w.png 2316w" sizes="100px">
+        <a href="#">Ariel Elya</a>
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation bar">
+      <nav>
+        <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="employment.html">Employment</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="more.html">Form</a></li>
+        <li><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></li>
+          <a href="mailto:ariel.elya@runi.ac.il"><i class="material-icons">email</i></a>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span>
+          &#9776; <!-- This is an Unicode hamburger icon as a placeholder -->
+        </span>
+      </label>
+    </header>
+  
+    <div id="page-wrap">
+  
+    <div class="clear"></div>
+    <div class="clear"></div>
+
+    <div class="education">
+      <h2 id="education">Education</h2>
+      <div class="grid-container">
+        <div class="education_figure">
+          I graduated from high school in 2018 with five study units in the following subjects: Computer Science, Mathematics, English, Biology, and Oral Torah.
+        </div>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+    <div class="clear"></div>
+
+    <button id="toggleCalculator" style="margin: 20px auto; display: block;">Click Me</button>
+
+     <!-- Create table -->
+     <table id="calcu" style="display: none;"> 
+        <tr> 
+            <td colspan="3"> 
+                <input type="text" id="result"> 
+            </td> 
+            <td><input type="button" value="c"></td> 
+        </tr> 
+  
+        <tr> 
+            <td><input type="button" value="1"></td> 
+            <td><input type="button" value="2"></td> 
+            <td><input type="button" value="3"></td> 
+            <td><input type="button" value="/"></td> 
+        </tr> 
+        <tr> 
+            <td><input type="button" value="4"></td> 
+            <td><input type="button" value="5"></td> 
+            <td><input type="button" value="6"></td> 
+            <td><input type="button" value="*"></td> 
+        </tr> 
+        <tr> 
+            <td><input type="button" value="7"></td> 
+            <td><input type="button" value="8"></td> 
+            <td><input type="button" value="9"></td> 
+            <td><input type="button" value="-"></td> 
+        </tr> 
+        <tr> 
+            <td><input type="button" value="0"></td> 
+            <td><input type="button" value="."></td> 
+            <td><input type="button" value="="></td> 
+            <td><input type="button" value="+"></td> 
+        </tr> 
+    </table> 
+  
+    </div>
+    
+    <div class="clear"></div>
+
+    <footer>
+      My Linkdin profile: <a href="https://www.linkedin.com/in/ariel-elya-a201051b6" target="_blank" rel="noopener">Ariel Elya</a>
+    </footer>
+    <div class="clear"></div>
+  </body>
+</html>
+    
